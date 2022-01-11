@@ -1,20 +1,21 @@
 # Hack-WPI2022
 Project for the Hack@WPI 2022 hackathon. 
 
-Collaborators
+## Collaborators
 
 Tate Donnelly, Grace, and Nick
 
-**Inspiration**
+## Inspiration
 
-**What it does**
+## What it does
 
-**How we built it**
+## How we built it
 
-**Challenges we ran into**
+## Challenges we ran into
 
-**Accomplishments that we're proud of**
+## Accomplishments that we're proud of
 
-**What we learned**
+## What we learned
 
-**What's next**
+## What's next
+
