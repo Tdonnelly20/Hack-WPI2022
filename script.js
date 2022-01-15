@@ -76,6 +76,10 @@ function generateQuestions (index) {
     option5.innerHTML = `${question.answer5}`
 }
 
+function isCharNumber(c) {
+    return c >= '0' && c <= '9';
+  }
+
 
 function loadNextQuestion () {
     const selectedOption = document.querySelector('input[type="radio"]:checked');
@@ -85,16 +89,61 @@ function loadNextQuestion () {
         return;
     }
     //Get value of selected radio
-    const answerScore = String(selectedOption.nextElementSibling.getAttribute('data-total'));
-    console.log(score[0]);
+    
+
+    let dataString =  option1.getAttribute('data-total');
+
+
+    let answerScoreTag = [];
+
+    let answerScoreIdentification = [];
+
+    let currentAnswerTag;
+    let currentAnswerID;
+    
+    console.log("dataString length: " + dataString.length);
+    for(let i = 0; i <  dataString.length; i+=7){
+        console.log("location: " + i);
+        //console.log(dataString.charAt(i));
+        if(!isCharNumber(dataString.charAt(i))){
+            
+            currentAnswerTag = dataString.substring(i, i+3);
+
+            currentAnswerID = Number(dataString.substring(i+5, i+6));
+
+            
+
+            if(dataString.charAt(i + 4) == '-'){ //must also put '+' sign to ensure proper spacing
+                //console.log("hallo");
+                currentAnswerID = -1*currentAnswerID; 
+            }
+            answerScoreId = dataString.substring(i + 5, i + 6);
+
+            
+            console.log(currentAnswerTag);
+            console.log(currentAnswerID);
+            answerScoreTag.push(currentAnswerTag);
+            answerScoreIdentification.push(currentAnswerID);
+
+        }
+    }
+
+
+   // answerScore.push()
+
+
+
+    //const answerScore = String(selectedOption.nextElementSibling.getAttribute('data-total'));
+    console.log(answerScoreIdentification[0]);
+    console.log(answerScoreTag[0]);
 
     ////Add the answer score to the score array
-    score.push(answerScore);
+    //score.push(answerScore);
 
     selectedAnswersData.push()
     
 
-    const totalScore = score.reduce((total, currentNum) => total + currentNum);
+    //const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
     //Finally we increment the current question number ( to be used as the index for each array)
     currentQuestion++;
