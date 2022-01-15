@@ -76,3 +76,23 @@ float: right;
 .btn-submit:hover{
     background-color: #8f2934;
 }
+.quiz-container{
+    text-align: center;
+}
+label {
+    
+}
+
+input[type="radio"] {
+    vertical-align:baseline;
+    padding:10px;
+    margin:10px;
+}
+
+input[type="submit"]{
+
+    border:none;
+    background-color:blue;
+    color:white;
+    padding:15px;
+}
