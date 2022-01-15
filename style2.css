@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6{
 
 body {
 margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Be-Vietnam-Pro;
 }
 
 .radio-buttons {
@@ -85,23 +85,62 @@ border-radius: 4px;
 .btn-submit:hover{
     background-color: #8f2934;
 }
-<<<<<<< HEAD
 
 button {
   background-color: #6B0101;
   border: none;
   color: white;
   padding: 15px 32px;
+  margin:10%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-=======
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #AC2B37, #A9B0B7, #000000, #AC2B37);
+    /**box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);**/
+}
+
+
+
 .quiz-container{
     text-align: center;
 }
 label {
-    
+
 }
 
 input[type="radio"] {
