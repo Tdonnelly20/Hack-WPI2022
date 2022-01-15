@@ -64,6 +64,7 @@ function generateQuestions (index) {
     //Populate html elements 
     questionEl.innerHTML = `${index + 1}. ${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);
+    console.log(option1.getAttribute('data-total'));
     option2.setAttribute('data-total', `${option2Total}`);
     option3.setAttribute('data-total', `${option3Total}`);
     option4.setAttribute('data-total', `${option4Total}`);
