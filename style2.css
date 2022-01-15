@@ -5,14 +5,13 @@ h1, h2, h3, h4, h5, h6{
 * {box-sizing: border-box;}
 
 body {
-margin: 0;
-font-family: Be-Vietnam-Pro;
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .radio-buttons {
   border-spacing: 75px 10px;
   margin: justify;
-  /*padding: 100px 100px 100px 100px;*/
 }
 
 .header {
@@ -92,6 +91,7 @@ button {
   color: white;
   padding: 15px 32px;
   margin:10%;
+  font-family: 'Be Vietnam Pro', sans-serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
