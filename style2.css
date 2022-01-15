@@ -85,6 +85,7 @@ border-radius: 4px;
 .btn-submit:hover{
     background-color: #8f2934;
 }
+<<<<<<< HEAD
 
 button {
   background-color: #6B0101;
@@ -95,4 +96,25 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+=======
+.quiz-container{
+    text-align: center;
+}
+label {
+    
+}
+
+input[type="radio"] {
+    vertical-align:baseline;
+    padding:10px;
+    margin:10px;
+}
+
+input[type="submit"]{
+
+    border:none;
+    background-color:blue;
+    color:white;
+    padding:15px;
+>>>>>>> 6c259fd01d2ec6f2161378b7e06f335554d864ff
 }
